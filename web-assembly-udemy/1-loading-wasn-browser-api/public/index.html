@@ -7,5 +7,11 @@
   </head>
   <body>
     <h1>WASM</h1>
+    <script>
+      // Not working for me
+      WebAssembly.instantiateStreaming(fetch("helloweb.wasm")).then(() => {
+        console.log("WASM Loaded");
+      });
+    </script>
   </body>
 </html>
